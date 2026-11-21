@@ -1,0 +1,144 @@
+/* ==========================================================================
+   GAYA KUSTOM E-PORTFOLIO IRAMA BANGSA (style.css)
+   Kursus: COM3083 Komunikasi Antarabudaya
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. LATAR BELAKANG GRADIEN UTAMA (HERO SECTION)
+   Menggabungkan warna rasmi kumpulan: Merah Manggis (#7A1C33) & Hijau Zamrud (#1B4D3E)
+   -------------------------------------------------------------------------- */
+.hero-gradient {
+    background: linear-gradient(135deg, #4E0F1F 0%, #7A1C33 55%, #1B4D3E 100%);
+}
+
+/* --------------------------------------------------------------------------
+   2. ANIMASI HOVER UNTUK KAD INTERAKTIF
+   Memberi kesan terapung lembut apabila kursor berada di atas kad
+   -------------------------------------------------------------------------- */
+.card-hover {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 25px -5px rgba(122, 28, 51, 0.12),
+                0 8px 10px -6px rgba(122, 28, 51, 0.08);
+}
+
+/* --------------------------------------------------------------------------
+   3. PENYEMBUNYI BAR SKROL (UNTUK TAB NAVIGASI MENDATAR)
+   Membolehkan skrol sentuh pada skrin kecil tanpa memaparkan bar skrol
+   -------------------------------------------------------------------------- */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;  /* Internet Explorer & Edge */
+    scrollbar-width: none;     /* Firefox */
+}
+
+/* --------------------------------------------------------------------------
+   4. BINGKAI GAMBAR KOSONG (EMPTY IMAGE PLACEHOLDER)
+   -------------------------------------------------------------------------- */
+.empty-img-frame {
+    background-color: #F5EFE6;
+    border: 2.5px dashed #D4AF37;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.empty-img-frame img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 10;
+}
+
+/* Paparan gambar penuh & jelas untuk dokumen minit mesyuarat */
+.empty-img-frame.full-document-view {
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-color: #E7E5E4;
+    padding: 0 !important;
+    min-height: auto;
+}
+
+.empty-img-frame.full-document-view img {
+    position: static;
+    width: 100%;
+    height: auto;
+    max-height: 72vh;
+    object-fit: contain;
+    display: block;
+}
+
+.empty-img-frame img[src=""],
+.empty-img-frame img:not([src]),
+.empty-img-frame img.hidden {
+    display: none;
+}
+
+/* --------------------------------------------------------------------------
+   5. PAPARAN GAMBAR MINIT MESYUARAT
+   - Bingkai nisbah 16:9 yang konsisten.
+   - Gambar menggunakan object-fit: contain supaya keseluruhan gambar kelihatan.
+   - Imej potret dan landskap tidak dipotong.
+   -------------------------------------------------------------------------- */
+.meeting-image-frame {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    min-height: 220px;
+    max-height: 62vh;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F5EFE6;
+    border: 2.5px dashed #D4AF37;
+    overflow: hidden;
+    position: relative;
+}
+
+.meeting-image-frame.has-image {
+    background: #FFFFFF;
+    border: 1px solid #E7E5E4;
+}
+
+.meeting-image-frame img {
+    position: static;
+    inset: auto;
+    width: 100%;
+    height: 100%;
+    max-height: 62vh;
+    object-fit: contain;
+    object-position: center;
+    z-index: auto;
+}
+
+.meeting-image-frame #meeting-img-placeholder {
+    width: 100%;
+    height: 100%;
+}
+
+#meeting-image-filename {
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 640px) {
+    .meeting-image-frame {
+        min-height: 190px;
+        max-height: 52vh;
+    }
+
+    .meeting-image-frame img {
+        max-height: 52vh;
+    }
+}
