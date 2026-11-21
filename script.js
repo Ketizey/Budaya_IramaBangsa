@@ -75,7 +75,7 @@ const meetingDetails = [
         meta: 'Minggu 4 • Perpustakaan Utama',
         duration: '2.0 Jam',
         imgSrc: '',
-        pdfSrc: 'minit-mesyuarat-01.pdf',
+        pdfSrc: 'https://ketizey.github.io/Budaya_IramaBangsa/Budaya/minit-mesyuarat-01.pdf',
         pdfName: 'Minit Mesyuarat #01.pdf',
         imgLabel: 'Letak Gambar Bukti Perjumpaan Minggu 4',
         desc: 'Perjumpaan pertama bagi membentuk kumpulan seramai 4 orang ahli dan memilih nama "Irama Bangsa" sebagai simbol keharmonian kepelbagaian budaya. Ahli bersetuju melantik Ahmad Danish sebagai ketua, Lim Mei Ling sebagai setiausaha, Clarence sebagai ketua kreatif, dan Kavitha sebagai penyelidik kandungan.'
@@ -87,7 +87,7 @@ const meetingDetails = [
         duration: '2.5 Jam',
         imgSrc: '',
         pdfSrc: 'pdf/minit-mesyuarat-02.pdf',
-        pdfName: 'Minit Mesyuarat #02.pdf',
+        pdfName: 'https://ketizey.github.io/Budaya_IramaBangsa/Budaya/minit-mesyuarat-02.pdf',
         imgLabel: 'Letak Gambar Bukti Perjumpaan Minggu 6',
         desc: 'Perbincangan dalam talian bagi merangka papan cerita (storyboard) dan skrip video dokumentari bertajuk "Satu Meja, Seribu Rasa". Setiap ahli membentangkan cadangan etika pemakanan dan pantang larang tradisional kaum masing-masing untuk dirakam.'
     },
@@ -97,43 +97,10 @@ const meetingDetails = [
         meta: 'Minggu 8 • Bilik Tutorial Fakulti',
         duration: '3.0 Jam',
         imgSrc: '',
-        pdfSrc: 'pdf/minit-mesyuarat-03.pdf',
+        pdfSrc: 'https://ketizey.github.io/Budaya_IramaBangsa/Budaya/minit-mesyuarat-03.pdf',
         pdfName: 'Minit Mesyuarat #03.pdf',
         imgLabel: 'Letak Gambar Bukti Perjumpaan Minggu 8',
         desc: 'Sesi rakaman babak temu bual serta penyusunan bahan kajian literatur berkaitan Teori Pengurusan Kebimbangan/Ketidakpastian (AUM) untuk slaid pembentangan akademik kumpulan.'
-    },
-    {
-        bil: 'Minit Mesyuarat #04',
-        title: 'Persiapan Logistik Get Together Activity',
-        meta: 'Minggu 10 • Kafe Budaya Kampus',
-        duration: '2.5 Jam',
-        imgSrc: '',
-        pdfSrc: 'pdf/minit-mesyuarat-04.pdf',
-        pdfName: 'Minit Mesyuarat #04.pdf',
-        imgLabel: 'Letak Gambar Bukti Perjumpaan Minggu 10',
-        desc: 'Menyelaras menu juadah potluck tradisional (Nasi Dagang, Kuih Bakul, Laksa Sarawak, dan Murukku), pertukaran busana tradisional antara ahli, serta penyediaan permainan rakyat seperti congkak dan batu seremban.'
-    },
-    {
-        bil: 'Minit Mesyuarat #05',
-        title: 'Pengumpulan Refleksi & Susun Atur Galeri Budaya',
-        meta: 'Minggu 12 • Google Meet (Dalam Talian)',
-        duration: '2.0 Jam',
-        imgSrc: '',
-        pdfSrc: 'pdf/minit-mesyuarat-05.pdf',
-        pdfName: 'Minit Mesyuarat #05.pdf',
-        imgLabel: 'Letak Gambar Bukti Perjumpaan Minggu 12',
-        desc: 'Setiap ahli membentangkan draf refleksi individu selepas menjayakan Get Together Activity. Turut dilakukan pemilihan foto terbaik bagi pameran maya di kolum Galeri Warisan & Budaya.'
-    },
-    {
-        bil: 'Minit Mesyuarat #06',
-        title: 'Semakan Akhir E-Portfolio & Pengisytiharan AI',
-        meta: 'Minggu 13 • Makmal Komputer',
-        duration: '2.0 Jam',
-        imgSrc: '',
-        pdfSrc: 'pdf/minit-mesyuarat-06.pdf',
-        pdfName: 'Minit Mesyuarat #06.pdf',
-        imgLabel: 'Letak Gambar Bukti Perjumpaan Minggu 13',
-        desc: 'Semakan menyeluruh kesemua 11 kolum wajib mengikut rubrik penilaian CLO3, pengesahan jumlah keseluruhan 14 jam mesyuarat, semakan tatabahasa, serta pelengkapan kolum pengisytiharan penggunaan AI sebelum penghantaran akhir.'
     }
 ];
 
